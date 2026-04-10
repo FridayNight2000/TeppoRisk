@@ -44,9 +44,9 @@ export default function RainfallMap() {
   const [selectedStationId, setSelectedStationId] = useState<string | null>(
     null,
   );
-  const [activeRiskFilters, setActiveRiskFilters] = useState<Set<RiskFilterLevel>>(
-    () => new Set(),
-  );
+  const [activeRiskFilters, setActiveRiskFilters] = useState<
+    Set<RiskFilterLevel>
+  >(() => new Set());
   const [isMapReady, setIsMapReady] = useState(false);
   const mapRef = useRef<MapRef | null>(null);
   const hasFocusedStationRef = useRef(false);
@@ -217,13 +217,9 @@ export default function RainfallMap() {
             />
           )}
         </div>
-        {loading && (
-          <MapMessageOverlay message="Loading risk overview..." />
-        )}
+        {loading && <MapMessageOverlay message="Loading risk overview..." />}
 
-        {error && (
-          <MapMessageOverlay message={error} tone="error" />
-        )}
+        {error && <MapMessageOverlay message={error} tone="error" />}
 
         {showOverlay && (
           <MapMessageOverlay message="No risk overview data available currently" />
