@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Real-Time Risk - Rainfall Map",
-  description: "Japan rainfall visualization",
+  title: "TeppoRisk - Flash Flood Live Map",
+  description: "Real-time Flash Flood (Teppo-mizu) risk assessment and rainfall visualization for Japan",
 };
 
 export default function RootLayout({
