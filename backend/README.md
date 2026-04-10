@@ -1,3 +1,12 @@
+---
+title: TeppoRisk API
+emoji: 🌊
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+---
+
 # Real-Time Risk Backend
 
 FastAPI service providing flood peak probability predictions per station.
