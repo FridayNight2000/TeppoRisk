@@ -1,0 +1,24 @@
+.DS_Store
+.venv/
+.vercel/
+.python-version
+.git-frontend-history/
+.vscode/
+
+backend/.venv/
+backend/.pytest_cache/
+backend/.ruff_cache/
+backend/.mypy_cache/
+backend/**/__pycache__/
+
+frontend/.next/
+frontend/node_modules/
+frontend/.vercel/
+frontend/.mypy_cache/
+frontend/.ruff_cache/
+frontend/tsconfig.tsbuildinfo
+
+*.py[cod]
+
+# Ignore scripts folder
+scripts/

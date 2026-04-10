@@ -1,0 +1,12 @@
+FRONTEND_DIR := frontend
+
+.PHONY: dev dev-backend dev-frontend
+
+dev:
+	$(MAKE) -C $(FRONTEND_DIR) dev $(if $(FRONTEND_PORT),FRONTEND_PORT=$(FRONTEND_PORT)) $(if $(BACKEND_HOST),BACKEND_HOST=$(BACKEND_HOST)) $(if $(BACKEND_PORT),BACKEND_PORT=$(BACKEND_PORT))
+
+dev-backend:
+	$(MAKE) -C $(FRONTEND_DIR) dev-backend $(if $(BACKEND_HOST),BACKEND_HOST=$(BACKEND_HOST)) $(if $(BACKEND_PORT),BACKEND_PORT=$(BACKEND_PORT))
+
+dev-frontend:
+	$(MAKE) -C $(FRONTEND_DIR) dev-frontend $(if $(FRONTEND_PORT),FRONTEND_PORT=$(FRONTEND_PORT))
