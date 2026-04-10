@@ -124,7 +124,7 @@ export default function RainfallMap() {
   }, []);
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,#fff7ed_0%,#f8fafc_42%,#e2e8f0_100%)] px-4 py-8">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-slate-200 px-4 py-8">
       <RiskToolbar
         activeRiskFilters={activeRiskFilters}
         stationCount={stations.length}
