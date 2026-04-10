@@ -41,7 +41,7 @@ export function StationDetailCard({
           </div>
           <button
             type="button"
-            aria-label="取消选中站点"
+            aria-label="Deselect station"
             onClick={onClose}
             className="inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-white text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-700 active:bg-slate-800 active:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2"
           >

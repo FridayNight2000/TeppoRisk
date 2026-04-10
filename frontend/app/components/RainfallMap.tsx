@@ -226,7 +226,7 @@ export default function RainfallMap() {
         )}
 
         {showOverlay && (
-          <MapMessageOverlay message="当前无可用风险概览数据" />
+          <MapMessageOverlay message="No risk overview data available currently" />
         )}
       </div>
     </div>
